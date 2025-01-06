@@ -4,7 +4,8 @@
   <head>
     <title>CJTJ</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="OutandAboutCSS.css" />
+    <link rel="stylesheet" href="SharedCSS.css" />
     <meta name="viewport" content="width=display-width, initial-scale=1" />
     <link
       href="https://fonts.googleleapis.com/css2?family=Nato+Sans&family=Roboto+Mono&display=swap"
@@ -18,43 +19,36 @@
 
   <!--Navigation bar-->
   <div class="navbar">
-    <a href="Home.html">Home</a>
+    <a href="./Home.html">Home</a>
     <div class="dropdown">
-      <button class="dropbtn">Photo Roll
+      <button class="dropbtn">
+        Photo Roll
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="Fire Photos.html">Fire Photos</a>
-        <a href="LED Photos.html">LED Photos</a>
-        <a href="Workshops.html">Workshops</a>
-        <a href="Out and About.html">All other photos</a>
+        <a href="./FirePhotos.html">Fire Photos</a>
+        <a href="./LEDPhotos.html">LED Photos</a>
+        <a href="./Workshops.html">Workshops</a>
+        <a href="./OutandAbout.html">All other photos</a>
       </div>
     </div>
-    <a href="Contact.html">Contact</a>
+    <a href="./Contact.html">Contact</a>
+    <a href="./DataProtection.txt">Data Protection</a>
     <div class="logo">
-      <img src="Images/Logo.jpg"/>
+      <img src="./ImageLibrary/Logo.jpg" />
     </div>
   </div>
 
   <!--Top section-->
-    <br />
-    <br />
-    <div class="container">
-      <div class="owned-photo-wrapper">
-        <img
-          id="owned-photo"
-          class="banner"
-          src="Images/Fire Juggling - Derren Harper.jpg"
-        />
-        <h4>This photo is owned by Derren Harper on Instagram</h4>
-      </div>
-      <div class="content">
-        <rect id="page-rec">
-          <p>All Other Photos</p>
-        </rect>
-      </div>
-      
+  <br />
+  <br />
+  <div class="container">
+    <img src="./ImageLibrary/Fire Juggling - Derren Harper.jpg" />
+    <div class="content">
+      <h1>All Other Photos</h1>
+      <p>This photo is owned and taken by Derren Harper</p>
     </div>
+  </div>
 
   <br>
 
@@ -63,7 +57,7 @@
 
     <div class="row">
       <div class="column">
-        <img src="Images/Out and About/Buzz saw contacts.jpg">
+        <img src="./ImageLibrary/Out and About/Buzz saw contacts.jpg">
         <img src="">
         <img src="">
         <img src="">
@@ -72,7 +66,7 @@
       </div>
 
       <div class="column">
-        <img src="Images/Out and About/Kirby Juggling photo.jpeg">
+        <img src="./ImageLibrary/Out and About/Kirby Juggling photo.jpeg">
         <img src="">
         <img src="">
         <img src="">
@@ -81,13 +75,17 @@
       </div>
 
       <div class="column">
-        <img src="Images/Out and About/Knives.JPG">
+        <img src="./ImageLibrary/Out and About/Knives.JPG">
         <img src="">
         <img src="">
         <img src="">
         <img src="">
         <img src="">
       </div>
+    </div>
+
+    <div class="footer">
+      <p>All media displayed within this website is exclusive property of CJ The Juggler and was taken by CJTJ or hired photographers.</p>
     </div>
 
 </body>

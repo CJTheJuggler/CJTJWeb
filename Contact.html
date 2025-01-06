@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>CJTJ</title>
-    <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
-    <link rel="stylesheet" href="./SharedCSS.css"/>
-    <link rel="stylesheet" href="./ContactCSS.css"/>
+    <link rel="icon" type="image/x-icon" href="./ImageLibrary/Logo.jpg" />
+    <link rel="stylesheet" href="./ContactCSS.css" />
+    <link rel="stylesheet" href="./SharedCSS.css" />
     <meta name="viewport" content="width=display-width, initial-scale=1" />
     <link
       href="https://fonts.googleleapis.com/css2?family=Nato+Sans&family=Roboto+Mono&display=swap"
@@ -23,7 +23,8 @@
     <div class="navbar">
       <a href="./Home.html">Home</a>
       <div class="dropdown">
-        <button class="dropbtn">Photo Roll
+        <button class="dropbtn">
+          Photo Roll
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
@@ -35,7 +36,7 @@
       </div>
       <a href="./Contact.html">Contact</a>
       <div class="logo">
-        <img src="./Images/Logo.jpg"/>
+        <img src="./ImageLibrary/Logo.jpg" />
       </div>
     </div>
 
@@ -43,44 +44,46 @@
     <br />
     <br />
     <div class="container">
-      <div class="owned-photo-wrapper">
-        <img
-          id="owned-photo"
-          class="banner"
-          src="./ImageLibrary/Fire Juggling - Derren Harper.jpg"/>
-        <h4>This photo is owned by Derren Harper on Instagram</h4>
-      </div>
+      <img src="./ImageLibrary/Fire Juggling - Derren Harper.jpg" />
       <div class="content">
-        <rect id="page-rec">
-          <p>Contact page</p>
-        </rect>
+        <h1>Contact Page</h1>
+        <p>This photo is owned and taken by Derren Harper</p>
       </div>
-      
     </div>
 
     <br />
 
     <!--Form-->
     <h3>Contact us</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-        </div>
+    <div class="container">
+      <form action="action_page.php">
+        <label for="fname"> Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">email</label>
+        <input
+          type="email"
+          id="lname"
+          name="lastname"
+          placeholder="Your email"
+        />
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
 
     <br />
     <br />
@@ -107,4 +110,12 @@
         ><img src="./ImageLibrary/Icons/whatsapp - icon.png"
       /></a>
     </div>
+
+    <div class="footer">
+      <p>
+        All media displayed within this website is exclusive property of CJ The
+        Juggler and was taken by CJTJ or hired photographers.
+      </p>
+    </div>
+  </body>
 </html>

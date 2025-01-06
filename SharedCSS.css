@@ -3,53 +3,31 @@
   position: absolute;
   height: 75px;
   width: 75px;
-  right: 5px;
+  right: 1px;
   display: flex;
 }
 
-/*Makes the banner photo fit the page, aswell as adapts to the page size*/
-.banner {
-  position: right;
-  height: 100%;
-  width: 100%;
-}
-
 /*PAGE TITLES*/
-
-/*Displaying text over a photo*/
-.owned-photo-wrapper {
-  justify-self: center;
+.container {
   position: relative;
+  margin: 0 auto;
 }
 
-#owned-photo {
-  border-radius: 5px;
-  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
-  transition: all ease in-out 0.2%;
+.container img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
 }
 
-#owned-photo:hover,
-.owned-photo-wrapper:hover {
-  filter: brightness(0.75);
-  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
-}
-
-.owned-photo-wrapper:hover > h4 {
-  visibility: visible;
-}
-
-.owned-photo-wrapper > h4 {
+.container .content {
   position: absolute;
-  top: 25%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 0, 255);
-  visibility: hidden;
-  z-index: 2;
-  transition: all ease-in-out 0.2%;
+  bottom: 0;
+  background: rgb(255, 0, 255); /* Fallback color */
+  background: rgba(255, 0, 255, 0.5); /* Pink background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 25%;
+  padding: 20px;
 }
-
-
 
 /*PHOTO POSITIONS*/
 .row {
@@ -165,32 +143,16 @@
   display: block;
 }
 
-.container {
-  position: relative;
-  /*   Maximum width */
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto; /* Center it */
-}
 
-.container .content {
-  position: absolute; /* Position the background text */
+.footer {
+  position: fixed;
   left: 0;
-  top: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgba(116, 115, 191, 0.7); /* Fallback color */
-  background: rgba(116, 115, 191, 0.7); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  height: 100%; /* Full width */
-  width: 25%;
-  padding: 5px; /* Some padding */
-}
-
-.content p {
-  display: flex;
-  font-size: 35px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 
+.body {
+  background: linear-gradient(left to top  right rgba(51, 138, 199, 1), rgba(116, 115, 191, 1), rgba(81, 74, 157, 1));
+}

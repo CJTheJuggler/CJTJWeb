@@ -1,0 +1,32 @@
+/*Displaying text over a photo*/
+.owned-photo-wrapper {
+  justify-self: center;
+  position: relative;
+}
+
+#owned-photo {
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease in-out 0.2%;
+}
+
+#owned-photo:hover,
+.owned-photo-wrapper:hover {
+  filter: brightness(0.75);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+.owned-photo-wrapper:hover > h4 {
+  visibility: visible;
+}
+
+.owned-photo-wrapper > h4 {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 0, 255);
+  visibility: hidden;
+  z-index: 2;
+  transition: all ease-in-out 0.2%;
+}

@@ -2,60 +2,53 @@
 <html>
 
 <head>
+
   <head>
     <title>CJTJ</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo.jpg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="SharedCSS.css" />
+    <link rel="stylesheet" href="LEDPhotosCSS.css" />
     <meta name="viewport" content="width=display-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleleapis.com/css2?family=Nato+Sans&family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleleapis.com/css2?family=Nato+Sans&family=Roboto+Mono&display=swap"
+      rel="stylesheet" />
   </head>
 
 <body>
+
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!--Navigation bar-->
   <div class="navbar">
-    <a href="Home.html">Home</a>
+    <a href="./Home.html">Home</a>
     <div class="dropdown">
-      <button class="dropbtn">Photo Roll
+      <button class="dropbtn">
+        Photo Roll
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="Fire Photos.html">Fire Photos</a>
-        <a href="LED Photos.html">LED Photos</a>
-        <a href="Workshops.html">Workshops</a>
-        <a href="Out and About.html">All other photos</a>
+        <a href="./FirePhotos.html">Fire Photos</a>
+        <a href="./LEDPhotos.html">LED Photos</a>
+        <a href="./Workshops.html">Workshops</a>
+        <a href="./OutandAbout.html">All other photos</a>
       </div>
     </div>
-    <a href="Contact.html">Contact</a>
+    <a href="./Contact.html">Contact</a>
     <div class="logo">
-      <img src="Images/Logo.jpg"/>
+      <img src="./ImageLibrary/Logo.jpg" />
     </div>
   </div>
 
   <!--Top section-->
-    <br />
-    <br />
-    <div class="container">
-      <div class="owned-photo-wrapper">
-        <img
-          id="owned-photo"
-          class="banner"
-          src="Images/Fire Juggling - Derren Harper.jpg"
-        />
-        <h4>This photo is owned by Derren Harper on Instagram</h4>
-      </div>
-      <div class="content">
-        <rect id="page-rec">
-          <p>LED Photos</p>
-        </rect>
-      </div>
-      
+  <br />
+  <br />
+  <div class="container">
+    <img src="./ImageLibrary/Fire Juggling - Derren Harper.jpg" />
+    <div class="content">
+      <h1>LED Photos</h1>
+      <p>This photo is owned and taken by Derren Harper</p>
     </div>
+  </div>
 
   <br>
 
@@ -64,31 +57,36 @@
 
     <div class="row">
       <div class="column">
-        <img src="Images/LED/Kirby LED 1.jpg">
-        <img src="Images/LED/LED Ball Still.JPG">
-        <img src="Images/LED/LED Flower 2.JPG">
+        <img src="./ImageLibrary/LED/Kirby LED 1.jpg">
+        <img src="./ImageLibrary/LED/LED Ball Still.JPG">
+        <img src="./ImageLibrary/LED/LED Flower 2.JPG">
         <img src="">
         <img src="">
         <img src="">
       </div>
 
       <div class="column">
-        <img src="Images/LED/LED pattern 1.JPG">
-        <img src="Images/LED/LED Flower.JPG">
-        <img src="Images/LED/LED Cloumns.JPG">
+        <img src="./ImageLibrary/LED/LED pattern 1.JPG">
+        <img src="./ImageLibrary/LED/LED Flower.JPG">
+        <img src="./ImageLibrary/LED/LED Cloumns.JPG">
         <img src="">
         <img src="">
         <img src="">
       </div>
 
       <div class="column">
-        <img src="Images/LED/LED Pattern 2.JPG">
-        <img src="Images/LED/LED Clover.JPG">
-        <img src="Images/LED/LED Rails.JPG">
+        <img src="./ImageLibrary/LED/LED Pattern 2.JPG">
+        <img src="./ImageLibrary/LED/LED Clover.JPG">
+        <img src="./ImageLibrary/LED/LED Rails.JPG">
         <img src="">
         <img src="">
         <img src="">
       </div>
+    </div>
+
+    <div class="footer">
+      <p>All media displayed within this website is exclusive property of CJ The Juggler and was taken by CJTJ or hired
+        photographers.</p>
     </div>
 
 </body>
