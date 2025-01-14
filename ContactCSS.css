@@ -19,57 +19,66 @@
   padding: auto;
 }
 
-/*EDITS SOCIAL MEDIA LINKS*/
-/*Makes the "Social Media" Title be in the middle of the links*/
-.SM-links-title {
-  position: absolute;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-container{
+  height: 25vh;
   display: flex;
-  position: relative;
-  justify-content: right;
-  align-items: right;
-  right: auto;
-  padding-right: 25px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-/*Makes the links be on the right of the screen*/
-.SM-links {
+.contact-left{
   display: flex;
-  position: relative;
-  justify-content: right;
-  align-items: right;
-  padding: auto;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea, input[type=email] {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+.contact-left-title h2{
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 5px;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
+.contact-inputs{
+  width: 400px;
+  height: 50px;
   border: none;
-  border-radius: 4px;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea{
+  height: 150px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus{
+  border: 2px solid rgba(255, 0, 0, 0.75);
+}
+
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, rgba(116, 115, 191, 1), rgba(81, 74, 157, 1));
   cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
 }

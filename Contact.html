@@ -3,8 +3,8 @@
   <head>
     <title>CJTJ</title>
     <link rel="icon" type="image/x-icon" href="./ImageLibrary/Logo.jpg" />
-    <link rel="stylesheet" href="./ContactCSS.css" />
     <link rel="stylesheet" href="./SharedCSS.css" />
+    <link rel="stylesheet" href="./ContactCSS.css" />
     <meta name="viewport" content="width=display-width, initial-scale=1" />
     <link
       href="https://fonts.googleleapis.com/css2?family=Nato+Sans&family=Roboto+Mono&display=swap"
@@ -54,34 +54,16 @@
     <br />
 
     <!--Form-->
-    <h3>Contact us</h3>
-    <div class="container">
-      <form action="action_page.php">
-        <label for="fname"> Name</label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name.."
-        />
-
-        <label for="lname">email</label>
-        <input
-          type="email"
-          id="lname"
-          name="lastname"
-          placeholder="Your email"
-        />
-
-        <label for="subject">Subject</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Write something.."
-          style="height: 200px"
-        ></textarea>
-
-        <input type="submit" value="Submit" />
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+        </div>
+        <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="Your Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit" alt="">Submit</button>
       </form>
     </div>
 
@@ -111,11 +93,8 @@
       /></a>
     </div>
 
-    <div class="footer">
-      <p>
-        All media displayed within this website is exclusive property of CJ The
-        Juggler and was taken by CJTJ or hired photographers.
-      </p>
-    </div>
+    <footer>
+      <p>All media displayed within this website is exclusive property of CJ The Juggler and was taken by CJTJ or hired photographers.</p>
+    </footer>
   </body>
 </html>
