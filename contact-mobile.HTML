@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CJTJ</title>
+    <link rel="icon" type="image/x-icon" href="./ImageLibrary/Logo.jpg" />
+    <link rel="stylesheet" href="./ContactCSS.css" />
+    <link rel="stylesheet" href="./SharedCSS.css" />
+    <meta name="viewport" content="width=display-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleleapis.com/css2?family=Nato+Sans&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--Navigation bar-->
+    <div class="navbar">
+      <a href="./Home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Photo Roll
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./FirePhotos.html">Fire Photos</a>
+          <a href="./LEDPhotos.html">LED Photos</a>
+          <a href="./Workshops.html">Workshops</a>
+          <a href="./OutandAbout.html">All other photos</a>
+        </div>
+      </div>
+      <a href="./Contact.html">Contact</a>
+      <div class="logo">
+        <img src="./ImageLibrary/Logo.jpg" />
+      </div>
+    </div>
+
+    <!--Top section-->
+    <br />
+    <br />
+    <div class="container">
+      <img src="./ImageLibrary/Fire Juggling - Derren Harper.jpg" />
+      <div class="content">
+        <h1>Contact Page</h1>
+        <p>This photo is owned and taken by Derren Harper</p>
+      </div>
+    </div>
+
+    <br />
+
+    <!--Form-->
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+        </div>
+        <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="Your Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit" alt="">Submit</button>
+      </form>
+      <div class="contact-right">
+        
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!--Social Media Links-->
+    <h3 class="SM-links-title">Social Media Links</h3>
+    <div class="SM-links">
+      <a
+        href="https://www.facebook.com/profile.php?id=61567617711647&sk=about_details "
+        target="_blank"
+        ><img src="./ImageLibrary/Icons/facebook - icon.png"
+      /></a>
+      <a
+        href="https://www.instagram.com/cjthejuggler?igsh=NjV6Z2JkcHR5NGc= "
+        target="_blank"
+        ><img src="./ImageLibrary/Icons/instagram - icon.png"
+      /></a>
+      <a
+        href="https://www.tiktok.com/@cj_juggles?_t=8mNSrt54Bl3&_r=1 "
+        target="_blank"
+        ><img src="./ImageLibrary/Icons/tiktok - icon.png"
+      /></a>
+      <a href="https://wa.me/+447359671866" target="_blank"
+        ><img src="./ImageLibrary/Icons/whatsapp - icon.png"
+      /></a>
+    </div>
+
+    <footer>
+      <p>All media displayed within this website is exclusive property of CJ The Juggler and was taken by CJTJ or hired photographers.</p>
+    </footer>
+  </body>
+</html>
