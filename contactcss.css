@@ -1,0 +1,90 @@
+/*EDITS SOCIAL MEDIA LINKS*/
+/*Makes the "Social Media" Title be in the middle of the links*/
+.social-media-title {
+  position: absolute;
+  display: flex;
+  position: relative;
+  justify-content: right;
+  align-items: right;
+  right: auto;
+  padding-right: 25px;
+}
+
+/*Makes the links be on the right of the screen*/
+.social-media {
+  width: 100%;
+  text-align: right;
+  z-index: 100;
+}
+
+.social-icon {
+  scale: 50%;
+  margin: 0 10px;
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-container{
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2{
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea{
+  height: 150px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus{
+  border: 2px solid rgba(255, 0, 0, 0.75);
+}
+
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, rgba(116, 115, 191, 1), rgba(81, 74, 157, 1));
+  cursor: pointer;
+}
