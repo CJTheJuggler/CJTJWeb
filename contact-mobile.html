@@ -9,10 +9,8 @@
 
   <link rel="icon" type="image/x-icon" href="./imagelibrary/Logo.jpg" />
   <link rel="stylesheet" href="./sharedcss.css" />
-  <link rel="stylesheet" href="./indexcss.css" />
-
+  <link rel="stylesheet" href="./contactcss.css" />
 </head>
-
 
 <body>
   <!--Navigation bar-->
@@ -36,41 +34,36 @@
     </div>
   </div>
 
-
   <!--Top section-->
   <div class="page-header">
     <img src="./imagelibrary/Title Image.JPG" />
     <div class="page-header-content">
-      <h1>Home Page</h1>
+      <h1>Contact Page</h1>
     </div>
   </div>
 
+  <br />
 
-  <!--Text-->
-  <div class="about-me">
-    <div class="about-me-title">
-      <h2>Hello there, I'm CJ the performer behind CJ The Juggler</h2>
-    </div>
-    <p class="about-me-text">
-      Welcome to the Juggling Zone; this has been a project that I've been wanting to make the past few years. </br>
-      I've been learning circus skills for going on 11 years and taken the time to specialise in Juggling, Poi and
-      unicycling which I hope I get to share with you. </br>
-      As a circus performer I hope I get to display and teach you the skills I do; I enjoy seeing people’s reaction to
-      the wonderfully wacky things I do as well as aspiring the next generation of circus performers. </br>
-      At the Juggling Zone I have the aim of providing a fun
-      place to be, a community of budding circus artists and a learning
-      space. </br></br>
-      Contact me through the website or my socials if you have any
-      questions or would like a quote on my workshops, performances and more.</br>
-      Juggle On!
-    </p>
-
+  <!--Form-->
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-left-title">
+        <h2>Get in touch</h2>
+      </div>
+      <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d" />
+      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required />
+      <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required />
+      <textarea name="Your Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+      <button type="submit" alt="">Submit</button>
+    </form>
   </div>
 
+  <br />
+  <br />
 
   <!--Social Media Links-->
+  <h3 class="social-media-title">Stay Connected</h3>
   <div class="social-media">
-    <h3 class="social-media-title">Stay Connected</h3>
     <a href="https://www.facebook.com/profile.php?id=61567617711647&sk=about_details " target="_blank" alt="fb"
       class="social-icon"><img src="https://img.icons8.com/?size=100&id=jZ0kw76QEzJU&format=png&color=000000" /></a>
 
@@ -84,14 +77,11 @@
         src="https://img.icons8.com/?size=100&id=DUEq8l5qTqBE&format=png&color=000000" /></a>
   </div>
 
-
   <footer>
     <p>
       All media displayed within this website is exclusive property of CJ The
       Juggler and was taken by CJTJ or hired photographers.
     </p>
-    <a href="./TOS.html">Tearms of Services</a>
-    <a href="./PrivacyPolicy.html">Privacy Policy</a>
   </footer>
 </body>
 

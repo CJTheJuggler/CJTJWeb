@@ -15,7 +15,9 @@
   width: 100%;
   text-align: right;
   z-index: 100;
+  padding-top: 150px;
 }
+
 
 .social-icon {
   scale: 50%;
@@ -25,14 +27,8 @@
   display: inline-block;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .contact-container{
-  height: 25vh;
+  margin-top: 150px auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

@@ -1,3 +1,11 @@
+.contract{
+  margin-top: 200px auto;
+}
+
+.contract p{
+  line-height: 0.75;
+}
+
 .DP-title {
   font-size: 35px;
   text-align: center;
@@ -13,4 +21,8 @@
   padding: auto;
   font-size: 20px;
   text-align: left;
+}
+
+.DP-key {
+  line-height: 1;
 }

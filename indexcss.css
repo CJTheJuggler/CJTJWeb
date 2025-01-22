@@ -1,16 +1,8 @@
 /*ABOUT ME SECTION*/
 .about-me {
+  margin: 100px auto;
   text-align: center;
 }
-
-.about-me-text {
-  margin-top: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 
 /*EDITS SOCIAL MEDIA LINKS*/
 /*Makes the "Social Media" Title be in the middle of the links*/
@@ -22,6 +14,7 @@
   align-items: right;
   right: auto;
   padding-right: 25px;
+  margin-top: 150px;
 }
 
 /*Makes the links be on the right of the screen*/
@@ -31,6 +24,7 @@
   z-index: 100;
 }
 
+
 .social-icon {
   scale: 50%;
   margin: 0 10px;
@@ -38,6 +32,7 @@
   text-decoration: none;
   display: inline-block;
 }
+
 
 footer {
   position: fixed;
