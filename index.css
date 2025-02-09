@@ -1,0 +1,68 @@
+/*ABOUT ME SECTION*/
+.about-me {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/*EDITS SOCIAL MEDIA LINKS*/
+/*Makes the "Social Media" Title be in the middle of the links*/
+.social-media-title {
+  display: flex;
+  position: relative;
+  justify-content: right;
+  align-items: right;
+  right: auto;
+  padding-right: 25px;
+}
+
+/*Makes the links be on the right of the screen*/
+.social-media {
+  text-align: right;
+  z-index: 1000;
+  padding-top: 150px;
+  margin-bottom: 50px;
+}
+
+
+.social-icon {
+  text-align: right;
+  margin: 0 auto;
+}
+
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(-35%)
+  }
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal-scrolling-items {
+  display: flex;
+  font-size: 40px;
+  width: 2600px;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
+}
+
+.announcement-bar {
+  color: red;
+}
+
+.my-history {
+  margin-top: 25px;
+}

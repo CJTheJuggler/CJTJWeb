@@ -1,0 +1,40 @@
+/*ABOUT ME SECTION*/
+.about-me {
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
+}
+
+/*EDITS SOCIAL MEDIA LINKS*/
+/*Makes the "Social Media" Title be in the middle of the links*/
+.social-media-title {
+    display: flex;
+    position: relative;
+    justify-content: right;
+    align-items: right;
+    right: auto;
+    padding-right: 25px;
+}
+
+/*Makes the links be on the right of the screen*/
+.social-media {
+    text-align: right;
+    z-index: 1000;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.social-icon {
+    text-align: right;
+    margin: 0 auto;
+}
+
+.my-history {
+    margin-top: 25px;
+}
+
+.bottom-link-1 .bottom-link-2 {
+    text-align: center;
+}
