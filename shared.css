@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/*Makes the logo smaller*/
+/* Makes the logo smaller */
 .logo {
   position: absolute;
   height: 75px;
@@ -13,8 +13,7 @@
   display: flex;
 }
 
-
-/*PAGE TITLES*/
+/* PAGE TITLES */
 .page-header {
   position: relative;
   left: 25%;
@@ -34,51 +33,39 @@
   bottom: 0;
   background: rgba(255, 0, 255, 0.5); /* Pink background with 0.5 opacity */
   color: #f1f1f1;
-  width: 15%;
-  height: auto;
   padding: 0 20px;
   margin-bottom: 4px;
   border-radius: 10px;
   text-align: center;
 }
 
-
-/*PHOTO POSITIONS*/
+/* PHOTO POSITIONS */
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 33.3%;
   padding: 0 4px;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
+.column img,
 .column video {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
-
-/*NAVIGATION BAR*/
-/* Navbar container */
+/* NAVIGATION BAR */
 .navbar {
   overflow: hidden;
   background-color: #514a9d;
   height: 75px;
 }
 
-/* Links inside the navbar */
 .navbar a {
   float: left;
   font-size: 16px;
@@ -88,13 +75,11 @@
   text-decoration: none;
 }
 
-/* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -106,13 +91,11 @@
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   background-color: #338ac7;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -122,7 +105,6 @@
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: white;
@@ -132,17 +114,15 @@
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-
+/* FOOTER */
 footer {
   position: fixed;
   left: 0;
@@ -153,27 +133,17 @@ footer {
   color: black;
 }
 
-.bottom-link-1{
+.bottom-link1
+.bottom-link-2
+.bottom-link-3 {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: left;
-  padding: 10px;
+  text-align: center;
 }
 
-
-.bottom-link-2{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: left;
-  margin-left: 150px;
-  padding: 10px;
-}
-
-
+/* BODY */
 body {
   background: teal;
   content: "";
@@ -184,10 +154,9 @@ body {
   height: 100%;
   z-index: -1;
   overflow-x: hidden;
+  
 }
 
-
-html{
+html {
   font-family: Arial, sans-serif;
 }
-

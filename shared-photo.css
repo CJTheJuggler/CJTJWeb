@@ -1,26 +1,17 @@
-/*PHOTO POSITIONS*/
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.container {
+  display: grid;
+  grid-template-columns: 1850px 1850px 1850px;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 33.3%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+.container img {
   border-radius: 10px;
 }
 
-.column video {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+.container video {
+  border-radius: 10px;
 }

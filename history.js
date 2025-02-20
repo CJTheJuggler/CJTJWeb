@@ -18,13 +18,13 @@ const swiper = new Swiper('.slider-wrapper', {
 
   breakpoints: {
     0: {
-      slidesPreView: 1
+      slidesPerView: 1
     },
     620: {
-      slidesPreView: 2
+      slidesPerView: 2
     },
     1042: {
-      slidesPreView: 3
+      slidesPerView: 3
     },
   }
 });

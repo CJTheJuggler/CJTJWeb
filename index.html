@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="./shared.css" />
   <link rel="stylesheet" href="./index.css" />
 
-  <script src="./index.js"></script>
+  <script src="./redirect.js"></script>
 
 </head>
 
 
-<body>
+<body onload="setTimeout('redirect()', 300)">
   <!--Navigation bar-->
   <div class="navbar">
     <a href="./index.html">Home</a>
@@ -33,9 +33,20 @@
         <a href="./outandabout.html">All other photos</a>
       </div>
     </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Promotional Content
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./firepromo.html">Fire </a>
+        <a href="./ledpromo.html">LED </a>
+        <a href="./outandaboutpromo.html">Street Show</a>
+      </div>
+    </div>
     <a href="./contact.html">Contact</a>
     <div class="logo">
-      <img src="./imagelibrary/Logo.jpg" />
+      <img src="https://i.ibb.co/XxqqR6TB/Logo.webp" alt="Logo">
     </div>
   </div>
 
@@ -54,7 +65,7 @@
 
   <!--Top section-->
   <div class="page-header">
-    <img src="./imagelibrary/Title Image.JPG" />
+    <img src="https://i.ibb.co/6c7VrCSX/Title-Image.jpg" alt="Title-Image">
     <div class="page-header-content">
       <h1>Home Page</h1>
     </div>
@@ -108,8 +119,9 @@
       All media displayed within this website is exclusive property of CJ The
       Juggler and was taken by CJTJ or hired photographers.
     </p>
-    <a href="./TOS.html" class="bottom-link-1">Tearms of Services</a>
-    <a href="./privacypolicy.html" class="bottom-link-2">Privacy Policy</a>
+    <a href="./tos.html" class="bottom-link-1">Tearms of Services</a>
+    <a href="./privacy.html" class="bottom-link-2">Privacy Policy</a>
+    <a href="./tearmsandconditions.html" class="bottom-link-3">Terms & Conditions</a>
   </footer>
 </body>
 

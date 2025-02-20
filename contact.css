@@ -1,16 +1,11 @@
-/*EDITS SOCIAL MEDIA LINKS*/
-/*Makes the "Social Media" Title be in the middle of the links*/
+/* Social Media Links */
 .social-media-title {
-  position: absolute;
   display: flex;
-  position: relative;
   justify-content: right;
   align-items: right;
-  right: auto;
   padding-right: 25px;
 }
 
-/*Makes the links be on the right of the screen*/
 .social-media {
   width: 100%;
   text-align: right;
@@ -19,7 +14,6 @@
   margin-bottom: 50px;
 }
 
-
 .social-icon {
   width: 50%;
   height: auto;
@@ -27,27 +21,28 @@
   margin: 0 auto;
 }
 
-.contact-container{
-  margin-top: 150px auto;
+/* Contact Form */
+.contact-container {
+  margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.contact-left{
+.contact-left {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
 }
 
-.contact-left-title h2{
+.contact-left-title h2 {
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 5px;
 }
 
-.contact-inputs{
+.contact-inputs {
   width: 400px;
   height: 50px;
   border: none;
@@ -58,21 +53,21 @@
   border-radius: 50px;
 }
 
-.contact-left textarea{
+.contact-left textarea {
   height: 150px;
   padding-top: 15px;
   border-radius: 20px;
 }
 
-.contact-inputs:focus{
+.contact-inputs:focus {
   border: 2px solid rgba(255, 0, 0, 0.75);
 }
 
-.contact-inputs::placeholder{
+.contact-inputs::placeholder {
   color: #a9a9a9;
 }
 
-.contact-left button{
+.contact-left button {
   display: flex;
   align-items: center;
   padding: 15px 30px;
