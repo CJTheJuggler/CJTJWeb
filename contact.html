@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CJ The Juggler</title>
+
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="./imagelibrary/Logo.jpg" />
+
+  <!--Stylesheet links-->
+  <link rel="stylesheet" href="./shared.css" />
+  <link rel="stylesheet" href="./contact.css" />
+  <link rel="stylesheet" href="./resize.css" />
+
+</head>
+
+
+
+
+
+<body>
+  <!--Navigation bar-->
+  <div class="navbar">
+    <a href="./index.html">
+      <img src="./imagelibrary/icons/home.png" class="icon" alt="Home">
+      Home
+    </a>
+    <!--Drop down 1 for photos-->
+    <div class="dropdown">
+      <button class="dropbtn">
+        <img src="./imagelibrary/icons/images.png" alt="" class="icon">
+        Photo Roll
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./firephotos.html">Fire Photos</a>
+        <a href="./ledphotos.HTML">LED Photos</a>
+        <a href="./workshops.html">Workshops</a>
+        <a href="./outandabout.html">All other photos</a>
+      </div>
+    </div>
+    <!--Drop down 2 for Promo videoa-->
+    <div class="dropdown">
+      <button class="dropbtn">
+        <img src="./imagelibrary/icons/promo.png" alt="Promo" class="icon">
+        Promo
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./firepromo.html">Fire </a>
+        <a href="./ledpromo.html">LED </a>
+        <a href="./outandaboutpromo.html">Street Show</a>
+      </div>
+    </div>
+    <a href="./contact.html">
+      <img src="./imagelibrary/icons/contact.png" alt="Contact" class="icon">
+      Contact
+    </a>
+    <div class="logo">
+      <img src="https://i.ibb.co/XxqqR6TB/Logo.webp" alt="Logo">
+    </div>
+  </div>
+
+
+  <!--Page heading including image-->
+  <div class="page-header">
+    <img src="./imagelibrary/Title Image.JPG" alt="Title Image">
+    <div class="page-header-content">
+      <h1>Contact Page</h1>
+    </div>
+  </div>
+
+
+  <main>
+    <!--Contact form -->
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+        </div>
+        <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+
+    <!--Social Media Links-->
+    <div class="social-media">
+      <h3 class="social-media-title">Stay Connected</h3>
+      <a href="https://www.facebook.com/profile.php?id=61567617711647&sk=about_details " target="_blank" alt="fb"
+        class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=jZ0kw76QEzJU&format=png&color=000000" />
+      </a>
+      <a href="https://www.instagram.com/cjthejuggler?igsh=NjV6Z2JkcHR5NGc= " target="_blank" alt="ig"
+        class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=nj0Uj45LGUYh&format=png&color=000000" />
+      </a>
+      <a href="https://www.tiktok.com/@cj_juggles?_t=8mNSrt54Bl3&_r=1 " target="_blank" alt="tt" class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=oKHadYScUe2I&format=png&color=000000" />
+      </a>
+      <a href="https://wa.me/+447359671866" target="_blank" alt="wa" class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=DUEq8l5qTqBE&format=png&color=000000" />
+      </a>
+    </div>
+  </main>
+
+
+  <!--Footer describing rights-->
+  <footer>
+    <p>
+      All media displayed within this website is exclusive property of CJ The Juggler and was taken by CJTJ or hired
+      photographers.
+    </p>
+  </footer>
+</body>
+
+</html>

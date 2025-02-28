@@ -1,0 +1,96 @@
+/*ABOUT ME SECTION*/
+.about-me {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/*EDITS SOCIAL MEDIA LINKS*/
+/*Makes the "Social Media" Title be in the middle of the links*/
+.social-media-title {
+  position: absolute;
+  display: flex;
+  position: relative;
+  justify-content: right;
+  align-items: right;
+  right: auto;
+  padding-right: 25px;
+}
+
+/*Makes the links be on the right of the screen*/
+.social-media {
+  width: 100%;
+  text-align: right;
+  z-index: 100;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+/*EDITS THE MY HISTORY SECTION*/
+/*Makes the "My History" Title be in the middle of the links*/
+.my-history {
+  margin-top: 25px;
+}
+
+.history-button {
+  padding: 10px;
+
+  border: none;
+  border-radius: 50px;
+
+  height: auto;
+  width: auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .about-me {
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 50px 0 50px;
+  }
+
+  /*EDITS THE MY HISTORY SECTION*/
+  /*Makes the "My History" Title be in the middle of the links*/
+  .my-history {
+    margin-top: 10px;
+  }
+
+  .history-button {
+    margin-top: 10px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 50px;
+
+    height: auto;
+    width: auto;
+  }
+
+  /*EDITS SOCIAL MEDIA LINKS*/
+  /*Makes the "Social Media" Title be in the middle of the links*/
+  .social-media-title {
+    position: absolute;
+    display: flex;
+    position: relative;
+    justify-content: right;
+    align-items: right;
+    right: auto;
+    padding-right: 25px;
+  }
+
+  /*Makes the links be on the right of the screen*/
+  .social-media {
+    width: 100%;
+    text-align: right;
+    z-index: 100;
+    bottom: 0;
+    margin-bottom: 25px;
+    padding-right: 10px;
+  }
+
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CJ The Juggler</title>
+
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="./imagelibrary/Logo.jpg" />
+
+  <!--Stylesheet links-->
+  <link rel="stylesheet" href="./shared.css" />
+  <link rel="stylesheet" href="./index.css" />
+
+  <!--Script links-->
+  <script src="./index.js"></script>
+
+</head>
+
+
+<body>
+
+  <!--Navigation bar-->
+  <div class="navbar">
+    <a href="./index.html">
+      <img src="./imagelibrary/icons/home.png" class="icon" alt="Home">
+      Home
+    </a>
+    <!--Drop down 1 for photos-->
+    <div class="dropdown">
+      <button class="dropbtn">
+        <img src="./imagelibrary/icons/images.png" alt="" class="icon">
+        Photo Roll
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./firephotos.html">Fire Photos</a>
+        <a href="./ledphotos.HTML">LED Photos</a>
+        <a href="./workshops.html">Workshops</a>
+        <a href="./outandabout.html">All other photos</a>
+      </div>
+    </div>
+    <!--Drop down 2 for Promo videoa-->
+    <div class="dropdown">
+      <button class="dropbtn">
+        <img src="./imagelibrary/icons/promo.png" alt="Promo" class="icon">
+        Promo
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="./firepromo.html">Fire </a>
+        <a href="./ledpromo.html">LED </a>
+        <a href="./outandaboutpromo.html">Street Show</a>
+      </div>
+    </div>
+    <a href="./contact.html">
+      <img src="./imagelibrary/icons/contact.png" alt="Contact" class="icon">
+      Contact
+    </a>
+    <div class="logo">
+      <img src="https://i.ibb.co/XxqqR6TB/Logo.webp" alt="Logo">
+    </div>
+  </div>
+
+
+  <!--Page heading including image-->
+  <div class="page-header">
+    <img src="https://i.ibb.co/6c7VrCSX/Title-Image.jpg" alt="Title-Image">
+    <div class="page-header-content">
+      <h1>Home Page</h1>
+    </div>
+  </div>
+
+
+  <main>
+    <!--About me section-->
+    <div class="about-me">
+      <div class="about-me-title">
+        <h2>Hello there, I'm CJ the performer behind CJ The Juggler</h2>
+      </div>
+      <p class="about-me-text">
+        Welcome to the Juggling Zone; this has been a project that I've been wanting to make the past few years. </br>
+        I've been learning circus skills for going on 11 years and taken the time to specialise in Juggling, Poi and
+        unicycling which I hope I get to share with you. </br>
+        As a circus performer I hope I get to display and teach you the skills I do; I enjoy seeing people’s reaction to
+        the wonderfully wacky things I do as well as aspiring the next generation of circus performers. </br>
+        At the Juggling Zone I have the aim of providing a fun place to be, a community of budding circus artists and a
+        learning space. </br></br>
+
+        Contact me through the website or my socials if you have any questions or would like a quote on my workshops,
+        performances and more.</br>
+        Juggle On!
+      </p>
+
+      <div class="my-history">
+        <p>
+          If you'd like to see mt history and how I got to where I am today, click the button below.
+        </p>
+        <a href="./history.html" class="history-button">
+          <button class="history-button">My History</button>
+        </a>
+
+      </div>
+    </div>
+
+
+    <!--Social Media Links-->
+    <div class="social-media">
+      <h3 class="social-media-title">Stay Connected</h3>
+      <a href="https://www.facebook.com/profile.php?id=61567617711647&sk=about_details " target="_blank" alt="fb"
+        class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=jZ0kw76QEzJU&format=png&color=000000" />
+      </a>
+      <a href="https://www.instagram.com/cjthejuggler?igsh=NjV6Z2JkcHR5NGc= " target="_blank" alt="ig"
+        class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=nj0Uj45LGUYh&format=png&color=000000" />
+      </a>
+      <a href="https://www.tiktok.com/@cj_juggles?_t=8mNSrt54Bl3&_r=1 " target="_blank" alt="tt" class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=oKHadYScUe2I&format=png&color=000000" />
+      </a>
+      <a href="https://wa.me/+447359671866" target="_blank" alt="wa" class="social-icon">
+        <img src="https://img.icons8.com/?size=48&id=DUEq8l5qTqBE&format=png&color=000000" />
+      </a>
+    </div>
+  </main>
+
+
+  <!--Footer describing rights and important links-->
+  <footer>
+    <p>
+      All media displayed within this website is exclusive property of CJ The
+      Juggler and was taken by CJTJ or hired photographers.
+    </p>
+    <a href="./tos.html" class="bottom-link-1">Tearms of Services</a>
+    <a href="./privacy.html" class="bottom-link-2">Privacy Policy</a>
+    <a href="./tearmsandconditions.html" class="bottom-link-3">Terms & Conditions</a>
+  </footer>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCMxD_c8_eVA0eJDiGueL-Y3He0mZjt0Nk",
+      authDomain: "tester-780d2.firebaseapp.com",
+      projectId: "tester-780d2",
+      storageBucket: "tester-780d2.firebasestorage.app",
+      messagingSenderId: "782195539303",
+      appId: "1:782195539303:web:be6a15a7e8ed17af5d83c2",
+      measurementId: "G-HFW4Q9RK66"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+
+</body>
+
+</html>
