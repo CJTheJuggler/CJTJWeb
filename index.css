@@ -1,79 +1,55 @@
 /*ABOUT ME SECTION*/
 .about-me {
-  margin-top: 100px;
-  text-align: center;
+    margin-top: 10;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
-/*EDITS SOCIAL MEDIA LINKS*/
-/*Makes the "Social Media" Title be in the middle of the links*/
-.social-media-title {
-  position: absolute;
-  display: flex;
-  position: relative;
-  justify-content: right;
-  align-items: right;
-  right: auto;
-  padding-right: 25px;
+.am-title {
+    /*creates a gap at the bottom of the title*/
+    margin-bottom: 10px;
 }
 
-/*Makes the links be on the right of the screen*/
-.social-media {
-  width: 100%;
-  text-align: right;
-  z-index: 100;
-  bottom: 0;
-  margin-bottom: 50px;
+.am-text {
+    line-height: 2rem;
 }
 
 /*EDITS THE MY HISTORY SECTION*/
-/*Makes the "My History" Title be in the middle of the links*/
 .my-history {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .history-button {
-  padding: 10px;
-
-  border: none;
-  border-radius: 50px;
-
-  height: auto;
-  width: auto;
-}
-
-
-@media screen and (max-width: 1024px) {
-  body {
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-
-  .about-me {
     margin-top: 10px;
-    text-align: center;
-    padding: 0 50px 0 50px;
-  }
-
-  /*EDITS THE MY HISTORY SECTION*/
-  /*Makes the "My History" Title be in the middle of the links*/
-  .my-history {
-    margin-top: 10px;
-  }
-
-  .history-button {
-    margin-top: 10px;
-    padding: 15px;
+    padding: 10px;
 
     border: none;
     border-radius: 50px;
 
     height: auto;
     width: auto;
-  }
+}
 
-  /*EDITS SOCIAL MEDIA LINKS*/
-  /*Makes the "Social Media" Title be in the middle of the links*/
-  .social-media-title {
+
+.sm {
+    /*sets the width of the content*/
+    width: 100%;
+
+    /*Aligns the text to the right*/
+    text-align: right;
+
+    /*Pushes the content to the bottom*/
+    bottom: 0;
+
+
+    z-index: 100;
+
+    /*creates a gap from the edge on the right side of the page*/
+    padding-right: 25px;
+}
+
+.sm-title {
     position: absolute;
     display: flex;
     position: relative;
@@ -81,16 +57,79 @@
     align-items: right;
     right: auto;
     padding-right: 25px;
-  }
+}
 
-  /*Makes the links be on the right of the screen*/
-  .social-media {
-    width: 100%;
-    text-align: right;
-    z-index: 100;
-    bottom: 0;
-    margin-bottom: 25px;
-    padding-right: 10px;
-  }
+.sm a {
+    text-decoration: none;
+}
 
+@media screen and (max-width: 1024px) {
+    body{
+        overflow-y: hidden;
+    }
+    .about-me {
+        margin-top: 10px;
+        text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: smaller;
+    }
+
+    .am-title {
+        /*creates a gap at the bottom of the title*/
+        margin-bottom: 5px;
+    }
+    
+    .am-text {
+        line-height: 1.15rem;
+    }
+
+    .my-history {
+        margin-top: 10px;
+    }
+    
+    .history-button {
+        margin-top: 5px;
+        padding: 10px;
+    
+        border: none;
+        border-radius: 50px;
+    
+        height: auto;
+        width: auto;
+    }
+
+    .sm {
+        /*sets the width of the content*/
+        width: 100%;
+    
+        /*Aligns the text to the right*/
+        text-align: right;
+    
+        /*Pushes the content to the bottom*/
+        bottom: 0;
+    
+    
+        z-index: 100;
+    
+        /*creates a gap from the edge on the right side of the page*/
+        padding-right: 5px;
+
+        font-size: small;
+    }
+    
+    .sm-title {
+        position: absolute;
+        display: flex;
+        position: relative;
+        justify-content: right;
+        align-items: right;
+        right: auto;
+        margin-top: 223px;
+        padding-right: 45px;
+    }
+    
+    .sm a {
+        text-decoration: none;
+    }
 }
