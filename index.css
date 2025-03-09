@@ -1,6 +1,6 @@
 /*ABOUT ME SECTION*/
 .about-me {
-    margin-top: 10;
+    margin-top: 10px;
     text-align: center;
     padding-right: 25px;
     padding-left: 25px;
@@ -125,7 +125,7 @@
         justify-content: right;
         align-items: right;
         right: auto;
-        margin-top: 223px;
+        margin-top: 50px;
         padding-right: 45px;
     }
     
