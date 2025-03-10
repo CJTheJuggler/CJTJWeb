@@ -29,6 +29,8 @@
 
     height: auto;
     width: auto;
+
+    cursor: pointer;
 }
 
 
@@ -125,7 +127,7 @@
         justify-content: right;
         align-items: right;
         right: auto;
-        margin-top: 50px;
+        margin-top: 25px;
         padding-right: 45px;
     }
     

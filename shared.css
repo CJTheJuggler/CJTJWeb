@@ -35,6 +35,7 @@ html {
     top: 0;
     right: 0;
     display: flex;
+    border-radius: 5px;
 }
 
 /* NAVIGATION BAR */
@@ -184,6 +185,7 @@ footer {
         top: 0;
         right: 0;
         display: flex;
+        border-radius: 5px;
     }
 
     nav {
