@@ -66,9 +66,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    body{
-        overflow-y: hidden;
-    }
     .about-me {
         margin-top: 10px;
         text-align: center;
