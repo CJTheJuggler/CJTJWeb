@@ -81,17 +81,11 @@
                     <h2>Get in touch</h2>
                 </div>
                 <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
-                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                <select id="enquiery" class="contact-inputs">
-                    <option selected disabled hidden>what is your enquiery type</option>
-                    <option value="fire show">Fire Show</option>
-                    <option value="LED show">LED Show</option>
-                    <option value="street show">Street Show</option>
-                    <option value="workshop">Workshop</option>
-                    <option value="general enquiery">General enquiery</option>
-                </select>
+                <input type="text" name="name" placeholder="Your Name:&ast;" class="contact-inputs" id="required-field" required>
+                <input type="email" name="email" placeholder="Your Email:&ast;" class="contact-inputs" id="required-field" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number:" class="contact-inputs" >
+                <textarea name="message" placeholder="Your Message:&ast;" class="contact-inputs" id="required-field" required></textarea>
+                <p>&ast; required areas</p>
                 <button type="submit">Submit</button>
             </form>
         </section>

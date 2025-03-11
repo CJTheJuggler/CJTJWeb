@@ -19,7 +19,10 @@
 
 .comp img {
     border-radius: 10px;
+}
 
+.comp video {
+    border-radius: 10px;
 }
 
 .comp-column img:hover {
@@ -57,7 +60,10 @@
     
     .mob img {
         border-radius: 10px;
-    
+    }
+
+    .mob video {
+        border-radius: 10px;
     }
     
     .mob-column img:hover {

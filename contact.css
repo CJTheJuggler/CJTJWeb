@@ -45,6 +45,10 @@
     color: #636363;
 }
 
+#enquiery {
+    color: #636363;
+}
+
 .contact button {
     display: flex;
     align-items: center;
@@ -134,6 +138,7 @@
         color: #636363;
     }
 
+
     .contact button {
         display: flex;
         align-items: center;
@@ -150,22 +155,22 @@
     .sm {
         /*sets the width of the content*/
         width: 100%;
-    
+
         /*Aligns the text to the right*/
         text-align: right;
-    
+
         /*Pushes the content to the bottom*/
         bottom: 0;
-    
-    
+
+
         z-index: 100;
-    
+
         /*creates a gap from the edge on the right side of the page*/
         padding-right: 5px;
 
         font-size: small;
     }
-    
+
     .sm-title {
         position: absolute;
         display: flex;
@@ -176,7 +181,7 @@
         margin-top: 25px;
         padding-right: 45px;
     }
-    
+
     .sm a {
         text-decoration: none;
     }
