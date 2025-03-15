@@ -67,10 +67,61 @@
     text-decoration: none;
 }
 
+.cookieNotice {
+    background: #444444;
+    display: none;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    left: 0;
+    padding: 12px 60px 12px 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid #999999;
+    color: #999999;
+    z-index: 100;
+}
+
+.cookieNotice__container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 90%;
+}
+
+.cookieNotice__container * {
+    margin: 0 0.5em;
+}
+
+.cookieNotice__container>a {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: #ff0000;
+    border: 0;
+    color: #ffffff;
+    display: inline-block;
+    padding: 14px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background-image: #cccccc;
+}
+
+#js_cookieNotice_refuse,
+.cookieNotice__container>a:last-child {
+    background: #ffffff;
+    color: #16161f;
+}
+
 @media screen and (max-width: 1024px) {
-    body{
+    body {
         overflow-y: hidden;
     }
+
     .about-me {
         margin-top: 10px;
         text-align: center;
@@ -83,7 +134,7 @@
         /*creates a gap at the bottom of the title*/
         margin-bottom: 5px;
     }
-    
+
     .am-text {
         line-height: 1.15rem;
     }
@@ -93,14 +144,14 @@
 
         display: none;
     }
-    
+
     .history-button {
         margin-top: 5px;
         padding: 10px;
-    
+
         border: none;
         border-radius: 50px;
-    
+
         height: auto;
         width: auto;
     }
@@ -108,22 +159,22 @@
     .sm {
         /*sets the width of the content*/
         width: 100%;
-    
+
         /*Aligns the text to the right*/
         text-align: right;
-    
+
         /*Pushes the content to the bottom*/
         bottom: 0;
-    
-    
+
+
         z-index: 100;
-    
+
         /*creates a gap from the edge on the right side of the page*/
         padding-right: 5px;
 
         font-size: small;
     }
-    
+
     .sm-title {
         position: absolute;
         display: flex;
@@ -134,7 +185,7 @@
         margin-top: 25px;
         padding-right: 45px;
     }
-    
+
     .sm a {
         text-decoration: none;
     }
