@@ -23,7 +23,7 @@ document.querySelector("#c-button").addEventListener("click", () => {
 })
 
 cookieMessage = () => {
-    if (!getCooke("cookie"))
+    if (!getCookie("cookie"))
         document.querySelector("#cookie").style.display = "block";
 }
 
