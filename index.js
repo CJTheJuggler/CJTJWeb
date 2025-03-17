@@ -5,7 +5,26 @@ setCookie = (cName, cValue, expDays) => {
     document.cookie = cName + "=" + cValue + "; " + expires + "path=/";
 }
 
+getCookie = (cName) => {
+    const name = cName + "=";
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split("; ");
+    let value;
+    cArr.forEach(val => {
+        if(val.indexOf(name) === 0) value = val.substring(name.length);
+    })
+
+    return value;
+}
+
 document.querySelector("#c-button").addEventListener("click", () => {
     document.querySelector("#cookies").style.display = "none";
-    setCookie("cookie", true, 30);
+    setCookie("cookie", true, 90);
 })
+
+cookieMessage = () => {
+    if (!getCooke("cookie"))
+        document.querySelector("#cookie").style.display = "block";
+}
+
+window.addEventListener("load", cookieMessage);
