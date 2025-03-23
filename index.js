@@ -39,3 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 })
+
+// Add A localStorage Method That Checks If The User Has Allowed Cookies Before, IF NOT COOKIES THEN 'COOKIES?', ELSE COOKIES NO 'COOKIES?'
+
+// Run Github As A Test

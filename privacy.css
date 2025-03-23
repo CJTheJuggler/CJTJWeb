@@ -1,0 +1,99 @@
+.pp {
+    display: absolute;
+    margin: 0 50px;
+    font-size: larger;
+    line-height: 1.25;
+}
+
+.pp button {
+    padding: 8px 12px;
+    border-radius: 50px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}
+.pp button a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.pp-intro a {
+    text-decoration: none;
+}
+
+.pp-sec-head {
+    margin-top: 25px;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+}
+
+ol li {
+    margin-left: 40px;
+}
+ul li {
+    margin-left: 80px;
+}
+ol a, ul a {
+    text-decoration: none;
+}
+
+.cookie-table {
+    margin: 0 40px;
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        font-size: x-small;
+    }
+    
+    .pp {
+        display: absolute;
+        margin: 0 50px;
+    }
+    
+    .pp button {
+        padding: 4px 6px;
+        border-radius: 50px;
+        background-color: blueviolet;
+        font-size: x-small;
+    }
+    .pp button a {
+        text-decoration: none;
+        color: antiquewhite;
+    }
+    
+    .pp-intro a {
+        text-decoration: none;
+    }
+    
+    .pp-sec-head {
+        margin-top: 25px;
+    }
+    
+    th, td {
+        border: 1px solid black;
+    }
+    
+    td {
+        padding: 10px;
+    }
+    
+    ol li {
+        margin-left: 20px;
+    }
+    ul li {
+        margin-left: 40px;
+    }
+    ol a, ul a {
+        text-decoration: none;
+    }
+    
+    .cookie-table {
+        margin: 0 40px;
+    }
+}

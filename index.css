@@ -1,6 +1,5 @@
 /*ABOUT ME SECTION*/
 .about-me {
-    margin-top: 10px;
     text-align: center;
     padding-right: 25px;
     padding-left: 25px;
@@ -67,6 +66,19 @@
     text-decoration: none;
 }
 
+.blur-box {
+    filter: blur(500px);
+    -webkit-filter: blur(500px);
+
+    width: 10000px;
+    height: 1050px;
+
+    position: absolute;
+
+
+    z-index: 1;
+}
+
 .c-container {
     width: 100%;
     margin: auto;
@@ -84,13 +96,11 @@
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
-    display: none;
 }
 
 .cookies {
     min-height: 70px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -102,7 +112,8 @@
     text-decoration: none;
 }
 
-#c-button {
+#c-button-a {
+    display: absolute;
     border-radius: 5px;
     padding: 8px 12px;
     font-size: 1rem;
@@ -110,6 +121,20 @@
     border: 3px solid green;
     background-color: lightgreen;
     color: darkgreen;
+    z-index: 1;
+}
+
+#c-button-d {
+    display: absolute;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 3px solid red;
+    background-color: lightcoral;
+    color: darkred;
+    z-index: 1;
+    right: 0;
 }
 
 
@@ -204,7 +229,6 @@
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
         z-index: 1;
-        display: none;
     }
 
     .cookies {
@@ -231,6 +255,5 @@
         border: 3px solid green;
         background-color: lightgreen;
         color: darkgreen;
-        right: 50%;
     }
 }
