@@ -1,30 +1,51 @@
-setCookie = (cName, cValue, expDays) => {
-    let date = new Date();
-    date.setTime(date.getTime() + (expDays*24*60*60*1000));
-    const expires = "expires=" + date.toUTCString();
-    document.cookie = cName + "=" + cValue + "; " + expires + "path=/";
-}
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("JS Loaded")
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
 
-getCookie = (cName) => {
-    const name = cName + "=";
-    const cDecoded = decodeURIComponent(document.cookie);
-    const cArr = cDecoded.split("; ");
-    let value;
-    cArr.forEach(val => {
-        if(val.indexOf(name) === 0) value = val.substring(name.length);
+    function getCookie(cname) {
+        let name = cname + "=";
+        let ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    document.querySelector("#c-button-a").addEventListener("click", () => {
+        document.querySelector("#cookies").style.display = "none";
+        document.querySelector(".blur-box").style.display = "none";
+        setCookie("cookie", true, 90);
+        console.log("Cookies Logged");
     })
 
-    return value;
-}
+    cookieMessage = () => {
+        if (!getCookie("cookie"))
+            document.querySelector("#cookie").style.display = "block";
+    }
 
-document.querySelector("#c-button").addEventListener("click", () => {
-    document.querySelector("#cookies").style.display = "none";
-    setCookie("cookie", true, 90);
+    window.addEventListener("load", cookieMessage);
+
+    function checkCookie() {
+        let user = getCookie("username");
+        if (user != "") {
+            alert("Welcome again " + user);
+        } else {
+            user = prompt("Please enter your name:", "");
+            if (user != "" && user != null) {
+                setCookie("username", user, 365);
+            }
+        }
+    }
+
 })
-
-cookieMessage = () => {
-    if (!getCookie("cookie"))
-        document.querySelector("#cookie").style.display = "block";
-}
-
-window.addEventListener("load", cookieMessage);
