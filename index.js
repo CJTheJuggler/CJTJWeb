@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    console.log(localStorage.getItem(cookie));
+
 })
 
 // Add A localStorage Method That Checks If The User Has Allowed Cookies Before, IF NOT COOKIES THEN 'COOKIES?', ELSE COOKIES NO 'COOKIES?'
