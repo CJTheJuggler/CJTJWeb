@@ -79,62 +79,54 @@
     z-index: 1;
 }
 
-.c-container {
-    width: 100%;
-    margin: auto;
-}
-
-.subcontainer {
-    width: 85%;
-    margin: auto;
-}
-
+/* Cookie popup styling */
 #cookies {
-    width: 100%;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.85);
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-}
-
-.cookies {
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: none; /* Initially hidden */
+    width: 300px;
+    text-align: center;
 }
 
 .cookies a {
-    color: lightskyblue;
-    font-weight: 500;
-    text-decoration: none;
+    color: yellow;
+    text-decoration: underline;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 #c-button-a {
-    display: absolute;
-    border-radius: 5px;
-    padding: 8px 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: 3px solid green;
-    background-color: lightgreen;
-    color: darkgreen;
-    z-index: 1;
+    background: green;
+    color: white;
+}
+
+#c-button-a:hover {
+    background: darkgreen;
 }
 
 #c-button-d {
-    display: absolute;
-    border-radius: 5px;
-    padding: 8px 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: 3px solid red;
-    background-color: lightcoral;
-    color: darkred;
-    z-index: 1;
-    right: 0;
+    background: red;
+    color: white;
+}
+
+#c-button-d:hover {
+    background: darkred;
 }
 
 
