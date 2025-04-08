@@ -27,6 +27,11 @@
     border-radius: 10px;
 }
 
+.shrink {
+    height: 500px;
+    width: auto;
+}
+
 .comp{
     display: block;
 }

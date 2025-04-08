@@ -1,13 +1,72 @@
-.pdf {
-    width: 100%;
-    height: 115vh;
-    padding: 20px 50px;
+main {
+    padding: 0 25px;
+    line-height: 1.5;
+    color: antiquewhite;
+}
+
+main button {
+    background-color: blueviolet;
+    height: 40px;
+    padding: 0 24px;
+    border-radius: 20px;
+    color: yellow;
+    border: none;
+}
+
+main a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.sec-head {
+    padding-top: 15px;
+}
+
+ol {
+    padding-left: 40px;
+}
+
+ul {
+    padding-left: 60px;
 }
 
 @media screen and (max-width:1024px) {
-    .pdf {
-        width: 100%;
-        height: 100vh;
-        padding: 10px;
+    main {
+        padding: 0 15px;
+        line-height: 1.25;
+        color: antiquewhite;
+        font-size: x-small;
+    }
+    
+    main button {
+        background-color: blueviolet;
+        height: 36px;
+        padding: 0 20px;
+        border-radius: 16px;
+        color: yellow;
+        border: none;
+        font-size: x-small;
+    }
+    
+    main p {
+        padding-top: 10px;
+        
+    }
+    
+    main a {
+        text-decoration: none;
+        color: yellow;
+    }
+    
+    .sec-head {
+        padding-top: 10px;
+    }
+    
+    ol {
+        padding-left: 20px;
+    }
+    
+    ul {
+        padding-left: 30px;
     }
 }

@@ -1,4 +1,4 @@
-/*Contact form formatting*/
+/*CONTACT FORM*/
 .contact-container {
     margin-top: 150px auto;
     display: flex;
@@ -62,20 +62,12 @@
     cursor: pointer;
 }
 
+/*SOCIAL MEDIA*/
 .sm {
-    /*sets the width of the content*/
     width: 100%;
-
-    /*Aligns the text to the right*/
     text-align: right;
-
-    /*Pushes the content to the bottom*/
     bottom: 0;
-
-
     z-index: 100;
-
-    /*creates a gap from the edge on the right side of the page*/
     padding-right: 25px;
 }
 
@@ -94,6 +86,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+    /*CONTACT FORM*/
     .contact-container {
         margin-top: 10px;
         display: flex;
@@ -152,22 +145,13 @@
         cursor: pointer;
     }
 
+    /*SOCIAL MEDIA*/
     .sm {
-        /*sets the width of the content*/
         width: 100%;
-
-        /*Aligns the text to the right*/
         text-align: right;
-
-        /*Pushes the content to the bottom*/
         bottom: 0;
-
-
         z-index: 100;
-
-        /*creates a gap from the edge on the right side of the page*/
         padding-right: 5px;
-
         font-size: small;
     }
 

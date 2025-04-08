@@ -1,12 +1,11 @@
-/*ABOUT ME SECTION*/
+/*ABOUT ME*/
 .about-me {
+    margin-top: 10px;
     text-align: center;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 0 25px;
 }
 
 .am-title {
-    /*creates a gap at the bottom of the title*/
     margin-bottom: 10px;
 }
 
@@ -14,41 +13,28 @@
     line-height: 2rem;
 }
 
-/*EDITS THE MY HISTORY SECTION*/
+/*MY HISTORY*/
 .my-history {
     margin-top: 25px;
-
     display: none;
 }
 
 .history-button {
     margin-top: 10px;
     padding: 10px;
-
     border: none;
     border-radius: 50px;
-
     height: auto;
     width: auto;
-
     cursor: pointer;
 }
 
-
+/*SOCIAL MEDIA*/
 .sm {
-    /*sets the width of the content*/
     width: 100%;
-
-    /*Aligns the text to the right*/
     text-align: right;
-
-    /*Pushes the content to the bottom*/
     bottom: 0;
-
-
     z-index: 100;
-
-    /*creates a gap from the edge on the right side of the page*/
     padding-right: 25px;
 }
 
@@ -66,76 +52,71 @@
     text-decoration: none;
 }
 
-.blur-box {
+#blur-box {
     filter: blur(500px);
     -webkit-filter: blur(500px);
-
     width: 10000px;
     height: 1050px;
-
     position: absolute;
-
-
     z-index: 1;
 }
 
-/* Cookie popup styling */
-#cookies {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.85);
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    display: none; /* Initially hidden */
-    width: 300px;
+/*COOKIE POP-UP*/
+.cookie-popup {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: antiquewhite;
+    padding: 15px 10px;
     text-align: center;
+    z-index: 9999;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: none;
 }
 
-.cookies a {
+.cookie-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cookie-content p {
+    margin: 0 0 10px;
+}
+
+.cookie-content a {
     color: yellow;
     text-decoration: underline;
 }
 
-.buttons {
-    margin-top: 10px;
-}
-
-button {
-    margin-right: 10px;
-    padding: 8px 12px;
+.cookie-button {
+    background-color: #4CAF50;
+    color: antiquewhite;
     border: none;
+    padding: 8px 16px;
+    margin: 5px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
-#c-button-a {
-    background: green;
-    color: white;
+.cookie-button.decline {
+    background-color: #f44336;
 }
 
-#c-button-a:hover {
-    background: darkgreen;
-}
-
-#c-button-d {
-    background: red;
-    color: white;
-}
-
-#c-button-d:hover {
-    background: darkred;
+.cookie-button:hover {
+    opacity: 0.9;
 }
 
 
-
+/*MOBILE LAYOUT*/
 @media screen and (max-width: 1024px) {
     body {
         overflow-y: hidden;
     }
 
+    /*ABOUT ME*/
     .about-me {
         margin-top: 10px;
         text-align: center;
@@ -145,7 +126,6 @@ button {
     }
 
     .am-title {
-        /*creates a gap at the bottom of the title*/
         margin-bottom: 5px;
     }
 
@@ -153,37 +133,26 @@ button {
         line-height: 1.15rem;
     }
 
+    /*MY HISTORY*/
     .my-history {
         margin-top: 10px;
-
         display: none;
     }
 
     .history-button {
         margin-top: 5px;
         padding: 10px;
-
         border: none;
         border-radius: 50px;
-
         height: auto;
         width: auto;
     }
 
     .sm {
-        /*sets the width of the content*/
         width: 100%;
-
-        /*Aligns the text to the right*/
         text-align: right;
-
-        /*Pushes the content to the bottom*/
         bottom: 0;
-
-
         z-index: 100;
-
-        /*creates a gap from the edge on the right side of the page*/
         padding-right: 5px;
 
         font-size: small;
@@ -204,48 +173,32 @@ button {
         text-decoration: none;
     }
 
-    .c-container {
-        width: 100%;
-        margin: auto;
+    /*COOKIE POP-UP*/
+
+    .cookie-popup {
+        padding: 10px;
+        font-size: 12px;
     }
 
-    .subcontainer {
-        width: 85%;
-        margin: auto;
+    .cookie-content {
+        max-width: 90%;
+        margin: 0 auto;
     }
 
-    #cookies {
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 1;
+    .cookie-content p {
+        font-size: 12px;
+        line-height: 1.4;
     }
 
-    .cookies {
-        min-height: 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        font-size: smaller;
+    .cookie-button {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin: 5px 8px;
     }
 
-    .cookies a {
-        color: lightskyblue;
-        font-weight: 500;
-        text-decoration: none;
+    .cookie-button.decline {
+        background-color: #e53935;
     }
 
-    #c-button {
-        border-radius: 5px;
-        padding: 8px 12px;
-        font-size: small;
-        cursor: pointer;
-        border: 3px solid green;
-        background-color: lightgreen;
-        color: darkgreen;
-    }
+
 }
