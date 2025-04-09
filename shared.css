@@ -215,8 +215,6 @@ footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        max-width: 100vw;
-        max-height: 100vw;
     }
 
     /* BODY */
@@ -234,6 +232,7 @@ footer {
     html {
         font-family: Arial, sans-serif;
         color: antiquewhite;
+        max-width: 100vw;
     }
 
     /*HEADER TEXT*/
