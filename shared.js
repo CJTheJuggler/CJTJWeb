@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     acceptBtn.addEventListener('click', function () {
         setCookie('cookieConsent', 'accepted', 90);
         popup.style.display = 'none';
-        document.getElementById("blur-box").style.display = 'none';
+    document.getElementById("blur-box").style.display = 'none';
     });
 
     declineBtn.addEventListener('click', function () {
