@@ -1,48 +1,81 @@
-/*CONTACT FORM*/
-#booking-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background: linear-gradient(to top right, #338ac7, #7473bf, #514a9d);
-    border-radius: 8px;
+/*Contact form formatting*/
+.contact-container {
+    margin-top: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-input,
-textarea,
-button,
-#performance-date {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.contact-title h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
 
-button {
-    background-color: #e60012;
-    /* Circus red */
-    color: antiquewhite;
+.contact-inputs {
+    width: 400px;
+    height: 50px;
     border: none;
-    font-weight: bold;
+    outline: none;
+    padding: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.contact textarea {
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid rgba(255, 0, 0, 0.75);
+}
+
+.contact-inputs::placeholder {
+    color: #636363;
+}
+
+#enquiery {
+    color: #636363;
+}
+
+.contact button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, rgba(116, 115, 191, 1), rgba(81, 74, 157, 1));
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #c5000e;
-}
-
-/*SOCIAL MEDIA*/
 .sm {
+    /*sets the width of the content*/
     width: 100%;
+
+    /*Aligns the text to the right*/
     text-align: right;
+
+    /*Pushes the content to the bottom*/
     bottom: 0;
+
+
     z-index: 100;
+
+    /*creates a gap from the edge on the right side of the page*/
     padding-right: 25px;
 }
 
@@ -61,52 +94,80 @@ button:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    /*CONTACT FORM*/
-    #booking-form {
-        max-width: 500px;
-        margin: 0 25px;
-        padding: 20px;
-        background: linear-gradient(to top right, #338ac7, #7473bf, #514a9d);
-        border-radius: 8px;
-    }
-    
-    label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-    }
-    
-    input,
-    textarea,
-    button,
-    #performance-date {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-    
-    button {
-        background-color: #e60012;
-        /* Circus red */
-        color: antiquewhite;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    button:hover {
-        background-color: #c5000e;
+    .contact-container {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
-    /*SOCIAL MEDIA*/
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-title h2 {
+        font-size: xx-large;
+        margin-bottom: 5px;
+    }
+
+    .contact-inputs {
+        width: 250px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding: 25px;
+        color: #666;
+        border-radius: 50px;
+        align-items: center;
+    }
+
+    .contact textarea {
+        height: 100px;
+        padding-top: 15px;
+        border-radius: 20px;
+    }
+
+    .contact-inputs:focus {
+        border: 2px solid rgba(255, 0, 0, 0.75);
+    }
+
+    .contact-inputs::placeholder {
+        color: #636363;
+    }
+
+
+    .contact button {
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: #fff;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(45deg, rgba(116, 115, 191, 1), rgba(81, 74, 157, 1));
+        cursor: pointer;
+    }
+
     .sm {
+        /*sets the width of the content*/
         width: 100%;
+
+        /*Aligns the text to the right*/
         text-align: right;
+
+        /*Pushes the content to the bottom*/
         bottom: 0;
+
+
         z-index: 100;
+
+        /*creates a gap from the edge on the right side of the page*/
         padding-right: 5px;
+
         font-size: small;
     }
 
