@@ -89,30 +89,23 @@
 
         <main>
             <!--CONTACT FORM -->
-        <form action="https://api.web3forms.com/submit" method="POST" id="booking-form">
-
-            <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
-
-            <label for="name">Full Name&ast;</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-            <label for="email">Email Address&ast;</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-
-            <label for="performance-date">Preferred Performance Date</label>
-            <input type="date" id="performance-date" name="performance_date">
-
-            <label for="event-details">Event Details&ast;</label>
-            <textarea id="event-details" name="event_details" placeholder="Tell me about your event..." rows="4"
-                required></textarea>
-
-            <p>&ast; required areas</p>
-
-            <button type="submit">Submit Booking Request</button>
-        </form>
+        <section class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                <div class="contact-title">
+                    <h2>Get in touch</h2>
+                </div>
+                <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
+                <input type="text" name="name" placeholder="Your Name:&ast;" class="contact-inputs" id="required-field"
+                    required>
+                <input type="email" name="email" placeholder="Your Email:&ast;" class="contact-inputs"
+                    id="required-field" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number:" class="contact-inputs">
+                <textarea name="message" placeholder="Your Message:&ast;" class="contact-inputs" id="required-field"
+                    required></textarea>
+                <p>&ast; required areas</p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
             <!--LINKS TO SOCIAL MEDIA-->
             <aside class="sm">
