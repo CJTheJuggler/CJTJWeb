@@ -68,7 +68,7 @@ button:hover {
     /*CONTACT FORM*/
     #booking-form {
         max-width: 500px;
-        margin: 0 auto;
+        margin: 0 10px;
         padding: 20px;
         background: linear-gradient(to top right, #338ac7, #7473bf, #514a9d);
         border-radius: 8px;
