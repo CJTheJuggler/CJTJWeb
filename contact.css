@@ -26,7 +26,7 @@ button,
     color: gray;
 }
 
-#booking-form button {
+button {
     background-color: #e60012;
     /* Circus red */
     color: white;
@@ -35,7 +35,7 @@ button,
     border: none;
 }
 
-#booking-form button:hover {
+button:hover {
     background-color: #c5000e;
 }
 
@@ -68,7 +68,7 @@ button,
     /*CONTACT FORM*/
     #booking-form {
         max-width: 500px;
-        margin: 0 10px;
+        margin: 0 auto;
         padding: 20px;
         background: linear-gradient(to top right, #338ac7, #7473bf, #514a9d);
         border-radius: 8px;
@@ -93,7 +93,7 @@ button,
         color: gray;
     }
     
-    #booking-form button {
+    button {
         background-color: #e60012;
         /* Circus red */
         color: white;
@@ -102,7 +102,7 @@ button,
         border: none;
     }
     
-    #booking-form button:hover {
+    button:hover {
         background-color: #c5000e;
     }
 
