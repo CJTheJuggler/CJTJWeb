@@ -33,7 +33,7 @@ function hideOverlay() {
 if (getCookie("cookieConsent")) {
     hideOverlay();
 } else {
-    overlay.style.pointerEvents = 'auto';
+    
 }
 
 document.getElementById('accept').addEventListener('click', () => {
