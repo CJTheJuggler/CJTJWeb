@@ -211,7 +211,7 @@ footer {
 
 /* Hidden by default */
 #juggling-loader {
-    /*display: none;*/
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
