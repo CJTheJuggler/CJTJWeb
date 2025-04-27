@@ -1,51 +1,57 @@
-const overlay = document.getElementById('overlay');
+const overlay = document.getElementById('cookie-overlay');
+const acceptBtn = document.getElementById('accept-btn');
+const declineBtn = document.getElementById('decline-btn');
 
-function setCookie(name, value, days) {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+// Helper to check if 90 days have passed
+function hasNinetyDaysPassed(savedTime) {
+    const now = new Date().getTime();
+    const ninetyDaysInMs = 90 * 24 * 60 * 60 * 1000;
+    return (now - savedTime) > ninetyDaysInMs;
 }
 
-function getCookie(name) {
-    const cname = name + "=";
-    const decodedCookie = decodeURIComponent(document.cookie);
-    const ca = decodedCookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) === ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(cname) === 0) {
-            return c.substring(cname.length, c.length);
+window.addEventListener('load', () => {
+    const cookieData = JSON.parse(localStorage.getItem('cookieChoice'));
+
+    if (cookieData && cookieData.choice === 'accepted') {
+        if (!hasNinetyDaysPassed(cookieData.timestamp)) {
+            overlay.style.display = 'none';
+        } else {
+            // 90 days passed, clear the old choice
+            localStorage.removeItem('cookieChoice');
         }
     }
-    return "";
-}
-
-function hideOverlay() {
-    overlay.classList.add('fade-out');
-    setTimeout(() => {
-        overlay.style.display = 'none';
-    }, 500);
-}
-
-if (getCookie("cookieConsent")) {
-    hideOverlay();
-} else {
-    
-}
-
-document.getElementById('accept').addEventListener('click', () => {
-    setCookie("cookieConsent", "accepted", 90);
-    hideOverlay();
-    console.log('Cookies accepted');
+    else if (cookieData && cookieData.choice === 'declined') {
+        // Optional: allow declined users to never see it again or re-ask after 90 days
+        if (!hasNinetyDaysPassed(cookieData.timestamp)) {
+            overlay.style.display = 'none';
+        } else {
+            localStorage.removeItem('cookieChoice');
+        }
+    }
 });
 
-document.getElementById('decline').addEventListener('click', () => {
-    setCookie("cookieConsent", "declined", 90);
-    hideOverlay();
-    console.log('Cookies declined');
+acceptBtn.addEventListener('click', () => {
+    const cookieData = {
+        choice: 'accepted',
+        timestamp: new Date().getTime()
+    };
+    localStorage.setItem('cookieChoice', JSON.stringify(cookieData));
+    overlay.style.opacity = 0;
+    setTimeout(() => {
+        overlay.style.display = 'none';
+    }, 500); // Match the transition duration
+});
+
+declineBtn.addEventListener('click', () => {
+    const cookieData = {
+        choice: 'declined',
+        timestamp: new Date().getTime()
+    };
+    localStorage.setItem('cookieChoice', JSON.stringify(cookieData));
+    overlay.style.opacity = 0;
+    setTimeout(() => {
+        overlay.style.display = 'none';
+    }, 500); // Match the transition duration
 });
 
 
