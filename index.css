@@ -54,22 +54,22 @@
 
 #overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: opacity 0.5s ease;
-    pointer-events: none;
+    /* No pointer-events: none here! */
 }
 
 #overlay.fade-out {
     opacity: 0;
+    pointer-events: none; /* <-- only disable clicks AFTER fade-out */
 }
+
 
 #cookie-banner {
     background: white;
@@ -78,7 +78,6 @@
     text-align: center;
     max-width: 400px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    pointer-events: auto;
     z-index: 10000;
 }
 
