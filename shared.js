@@ -1,46 +1,61 @@
-// Check if the user has already accepted or declined cookies
+const overlay = document.getElementById('overlay');
+
 function setCookie(name, value, days) {
-    const d = new Date();
-    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + d.toUTCString();
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
 function getCookie(name) {
+    const cname = name + "=";
     const decodedCookie = decodeURIComponent(document.cookie);
     const ca = decodedCookie.split(';');
-    name = name + "=";
     for (let i = 0; i < ca.length; i++) {
         let c = ca[i];
         while (c.charAt(0) === ' ') {
             c = c.substring(1);
         }
-        if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length);
+        if (c.indexOf(cname) === 0) {
+            return c.substring(cname.length, c.length);
         }
     }
     return "";
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const popup = document.getElementById('cookie-popup');
-    const acceptBtn = document.getElementById('accept-cookie');
-    const declineBtn = document.getElementById('decline-cookie');
+function hideOverlay() {
+    overlay.classList.add('fade-out');
+    setTimeout(() => {
+        overlay.style.display = 'none';
+    }, 500);
+}
 
-    if (!getCookie('cookieConsent')) {
-        popup.style.display = 'block';
-        document.getElementById("blur-box").style.display = 'block';
-    }
+if (getCookie("cookieConsent")) {
+    hideOverlay();
+} else {
+    overlay.style.pointerEvents = 'auto';
+}
 
-    acceptBtn.addEventListener('click', function () {
-        setCookie('cookieConsent', 'accepted', 90);
-        popup.style.display = 'none';
-        document.getElementById("blur-box").style.display = 'none';
-    });
+document.getElementById('accept').addEventListener('click', () => {
+    setCookie("cookieConsent", "accepted", 90);
+    hideOverlay();
+    console.log('Cookies accepted');
+});
 
-    declineBtn.addEventListener('click', function () {
-        setCookie('cookieConsent', 'declined', 90);
-        popup.style.display = 'none';
-        document.getElementById("blur-box").style.display = 'none';
-    });
+document.getElementById('decline').addEventListener('click', () => {
+    setCookie("cookieConsent", "declined", 90);
+    hideOverlay();
+    console.log('Cookies declined');
+});
+
+
+
+let loaderTimeout = setTimeout(() => {
+    document.getElementById("juggling-loader").style.display = "block";
+}, 2000);
+
+// When page is fully loaded, remove loader (if shown)
+window.addEventListener("load", () => {
+    clearTimeout(loaderTimeout);
+    document.getElementById("juggling-loader").style.display = "none";
 });
