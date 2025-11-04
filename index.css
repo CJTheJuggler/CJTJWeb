@@ -52,71 +52,117 @@
     text-decoration: none;
 }
 
-#cookie-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+/*COOKIES*/
+.container {
+    width: 1600px;
+    height: auto;
+
+}
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+#cookies {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    color: antiquewhite;
+    background-color: #512DA8;
+    z-index: 1;
+    /*display: none; */
+}
+
+.cookies {
+    min-height: 70px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
 }
 
-#cookie-box {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+.cookies a {
+    color: antiquewhite;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-#cookie-box h2 {
-    margin-bottom: 1rem;
-}
-
-#cookie-box p {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    color: #555;
-}
-
-#cookie-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-#cookie-buttons button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    border: none;
+#cookie-btn {
     border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    border: 3px solid white;
+    background-color: black;
+    color: antiquewhite;
 }
 
-#accept-btn {
-    background: #4CAF50;
+
+.home-reviews {
+    text-align: center;
+    padding: 40px 20px;
     color: white;
 }
 
-#accept-btn:hover {
-    background: #45a049;
+.reviewSlider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
 }
 
-#decline-btn {
-    background: #f44336;
+.homeReviewCard {
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.homeReviewCard .stars {
+    font-size: 22px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.homeReviewCard .text {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.homeReviewCard .name {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ff8c8c;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    font-size: 22px;
+    user-select: none;
     color: white;
+    transform: translateY(-50%);
 }
 
-#decline-btn:hover {
-    background: #e53935;
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.seeAll {
+    display: block;
+    margin-top: 15px;
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 
@@ -184,31 +230,16 @@
     }
 
     /*COOKIE POP-UP*/
-
-    .cookie-popup {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .cookie-content {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .cookie-content p {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
-    .cookie-button {
-        padding: 6px 12px;
-        font-size: 12px;
-        margin: 5px 8px;
-    }
-
-    .cookie-button.decline {
-        background-color: #e53935;
+    .cookies{
+        width: 100%;
+        padding: 10px 0;
     }
 
 
+}
+
+@media(max-width:1600px) {
+    .container {
+        width: 100%;
+    }
 }

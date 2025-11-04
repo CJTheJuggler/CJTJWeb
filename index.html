@@ -18,6 +18,7 @@
 
     <!--SCRIPT LINKS-->
     <script src="shared.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -135,8 +136,20 @@
                     <button class="history-button">My History</button>
                 </a>
             </div>
-
         </article>
+
+        <section class="home-reviews">
+            <h2>Reviews</h2>
+        
+            <div class="reviewSlider">
+                <div id="reviewSlides"></div>
+        
+                <a class="prev" onclick="plusHomeSlides(-1)">❮</a>
+                <a class="next" onclick="plusHomeSlides(1)">❯</a>
+            </div>
+        
+            <a class="seeAll" href="review.html">See all reviews</a>
+        </section>
 
         <!--LINKS TO SOCIAL MEDIA-->
         <aside class="sm">
@@ -169,15 +182,13 @@
         </aside>
     </main>
 
-    <!--COOKIE SELECTOR-->
-    <!--<div id="cookie-overlay">
-        <div id="cookie-box">
-            <h2>We Use Cookies 🍪</h2>
-            <p>We use cookies to improve your experience. Accept to continue using the site, or decline if you prefer
-                minimal functionality.</p>
-            <div id="cookie-buttons">
-                <button id="accept-btn">Accept</button>
-                <button id="decline-btn">Decline</button>
+    <!--<div id="cookies">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="cookies">
+                    <p>This website uses cookies when you contact us on <a href="./contact.html">our contact page</a></p>
+                    <button id="cookie-btn">That's Fine!</button>
+                </div>
             </div>
         </div>
     </div>-->

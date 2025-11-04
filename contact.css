@@ -17,7 +17,8 @@ label {
 input,
 textarea,
 button,
-#performance-date {
+#performance-date,
+#performance-type {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;

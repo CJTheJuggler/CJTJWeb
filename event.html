@@ -8,26 +8,26 @@
 
     <title> CJ The Juggler</title>
 
-    <!--FSETTING THE FAVICON-->
+    <!--SETTING THE FAVICON-->
     <link rel="icon" type="image/x-icon"
         href="https://drive.google.com/thumbnail?id=1yVV88LRaTpM_NsTtCjKaMhN8IvhnIkGH&sz=w100" />
 
     <!--STYLESHEET LINKS-->
     <link rel="stylesheet" href="./shared.css" />
-    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./event.css" />
 
     <!--SCRIPT LINKS-->
     <script src="shared.js"></script>
 </head>
 
 <body>
-
     <!--PAGE HEADER-->
     <header class="top-header">
         <h1>CJ The Juggler</h1>
         <img src="https://drive.google.com/thumbnail?id=1yVV88LRaTpM_NsTtCjKaMhN8IvhnIkGH&sz=w100" alt="Logo"
             class="logo">
     </header>
+
 
     <!--NAVIGATION BAR-->
     <nav>
@@ -91,7 +91,7 @@
         <img src="https://drive.google.com/thumbnail?id=1GhT8Nl-rJV4La4QHvDOBMgfce1jGnz1U&sz=w1000" alt="Title Image"
             class="header-img">
         <div class="header-text">
-            <h1>Contact Page</h1>
+            <h1>Events Page</h1>
         </div>
     </section>
 
@@ -103,72 +103,20 @@
             <div class="ball ball3"></div>
         </div>
 
-        
-        <!--CONTACT FORM -->
-        <form action="https://api.web3forms.com/submit" method="POST" id="booking-form">
 
-            <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
+        <section class="cal-count">
+            <iframe class="calander"
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&showPrint=0&title=Events%20I%20am%20Doing&showCalendars=0&src=NGU0YWU4Y2M5MmRiN2Q0ZDYyMDkzMjgyMGU1ODg5MDQzMWEyMjVhZmJiYTdjMDExZGRiM2E0ZWJjMTE3MWFmNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F6BF26"></iframe>
 
-            <label for="name">Full Name&ast;</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-            <label for="email">Email Address&ast;</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-
-            <label for="performance-date">Preferred Performance Date</label>
-            <input type="date" id="performance-date" name="performance_date">
-
-            <label for="performance-type">Performance Type</label>
-            <select id="performance-type" name="performance-type">
-                <option value="" selected disabled hidden>Please Select an option.</option>
-                <option value="workshop">Workshop</option>
-                <option value="street">Street Show (a busking type performance)</option>
-                <option value="LED">LED</option>
-                <option value="fire">Fire</option>
-            </select>
-
-            <label for="event-details">Event Details&ast;</label>
-            <textarea id="event-details" name="event_details" placeholder="Tell me about your event..." rows="4"
-                required></textarea>
-
-            <p>&ast; required areas</p>
-
-            <button type="submit">Submit Booking Request</button>
-        </form>
-
-        <!--LINKS TO SOCIAL MEDIA-->
-        <aside class="sm">
-            <header class="sm-title">
-                <h3>
-                    Stay Connected!
-                </h3>
-            </header>
-            <div class="social-icon">
-                <!--Facebook-->
-                <a href="https://www.facebook.com/profile.php?id=61567617711647&sk=about_details " target="_blank"
-                    alt="fb">
-                    <img src="https://img.icons8.com/?size=48&id=nd6SS1Eo5syT&format=png&color=000000" />
-                </a>
-                <!--Instagram-->
-                <a href="https://www.instagram.com/cjthejuggler?igsh=NjV6Z2JkcHR5NGc= " target="_blank" alt="ig">
-                    <img src="https://img.icons8.com/?size=48&id=tN8gey28ngcJ&format=png&color=000000" />
-                </a>
-
-                <!--TikTok-->
-                <a href="https://www.tiktok.com/@cjthejuggler?_t=ZN-8up0orew6h4&_r=1" target="_blank" alt="tt">
-                    <img src="https://img.icons8.com/?size=48&id=TDvCl4bDEGpX&format=png&color=000000" />
-                </a>
-
-                <!--Whatapp-->
-                <a href="https://wa.me/+447359671866" target="_blank" alt="wa">
-                    <img src="https://img.icons8.com/?size=48&id=db5AhYVEHAtC&format=png&color=000000" />
-                </a>
+            <div class="count">
+                <h1 id="event-title">Loading event...</h1>
+                <p id="event-time"></p>
+                <p id="event-location"></p>
+                <div id="countdown"></div>
             </div>
-        </aside>
-    </main>
+        </section>
+
+
 </body>
 
 <!--FOOTER-->

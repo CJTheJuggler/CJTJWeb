@@ -1,0 +1,152 @@
+/* ——— Review Grid Layout ——— */
+#reviewList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 25px;
+    width: 90vw;
+    /* takes 90% of screen width */
+    max-width: 1600px;
+    /* prevents being too wide */
+    margin: auto;
+    /* centers the grid */
+    padding-bottom: 40px;
+}
+
+/* Mobile responsive: switch to 1 column */
+@media (max-width: 750px) {
+    #reviewList {
+        grid-template-columns: 1fr;
+        width: 95vw;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filters label {
+        width: 100%;
+    }
+
+    .filters button {
+        width: 100%;
+    }
+}
+
+
+/* ——— Review Card Style ——— */
+.reviewCard {
+    background-color: #022c52;
+    color: white;
+    padding: 25px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 260px;
+    /* keeps them consistent height */
+}
+
+/* Question text */
+.reviewCard .question {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+/* Answers / extra comments */
+.reviewCard .answer {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Star rating styling */
+.reviewCard .stars {
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Reviewer name */
+.reviewCard .name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff8c8c;
+}
+
+
+/* ——— Filter Bar ——— */
+.filters {
+    background: #022c52;
+    color: white;
+    padding: 15px 20px;
+    margin: 20px auto 35px auto;
+    border-radius: 6px;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    font-family: Arial, sans-serif;
+}
+
+/* Labels */
+.filters label {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ff8c8c;
+}
+
+/* Inputs & dropdown */
+.filters input[type="date"],
+.filters select {
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 3px;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Buttons */
+.filters button {
+    background: #ff8c8c;
+    color: #022c52;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.filters button:hover {
+    background: white;
+    color: #022c52;
+}
+
+.filters {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

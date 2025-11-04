@@ -1,0 +1,32 @@
+.cal-count {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
+    margin: auto 25px;
+}
+
+.calander {
+    border: solid 1px black;
+    border-radius: 10px;
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    float: left; 
+}
+
+.count {
+    text-align: center;
+    margin-top: 2em;
+    float: right;
+}
+
+#countdown { 
+    font-size: 2em; 
+    margin-top: 20px;
+}
+
+#countdown a { 
+    color: #1a73e8; 
+    text-decoration: none; 
+}
