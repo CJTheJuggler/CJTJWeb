@@ -36,6 +36,29 @@ async function loadReviews() {
   }
 }
 
+function filterReviews() {
+  const el = document.getElementById("filterType");
+  const selected = (el.value || "").trim().toLowerCase();
+
+  // Treat "All Performances" or "All" as show everything
+  if (selected === "all" || selected === "all performances" || selected === "") {
+    const sorted = [...allReviews].sort((a, b) => parseDDMMYYYY(b.date) - parseDDMMYYYY(a.date));
+    displayReviews(sorted);
+    return;
+  }
+
+  // Filter exact type match (case-insensitive)
+  const filtered = allReviews.filter(
+    (r) => (r.type || "").trim().toLowerCase() === selected
+  );
+
+  // Sort filtered results newest → oldest
+  filtered.sort((a, b) => parseDDMMYYYY(b.date) - parseDDMMYYYY(a.date));
+
+  displayReviews(filtered);
+}
+
+
 function displayReviews(list) {
   const container = document.getElementById("reviewList");
   if (!container) return;
