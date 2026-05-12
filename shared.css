@@ -1,0 +1,131 @@
+/*
+!Setting up the Doc
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+p { 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    max-width: 65ch; 
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 { font-size: 3rem; 
+    font-weight: 800; 
+    font-family: 'Longshot'; 
+}
+h2 { 
+    font-size: 2rem; 
+    font-weight: 700; 
+    font-family: 'Longshot';
+}
+
+:root{
+    --primary-color: #7473bf;
+    --secondary-color: #514a9d;
+    --trinity-color: #338ac7;
+    --text-color: #FAEBD7;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-16: 64px;
+}
+
+@font-face {
+    font-family: Longshot;
+    src: url(./Long_Shot.woff2);
+}
+
+
+/*
+!Main CSS
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+}
+
+
+nav{
+    display: flex;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+nav a {
+    text-align: center;
+    padding: 0.875rem var(--space-4);
+    text-decoration: none;
+}
+.dropdown, .dropdown-i {
+    overflow: hidden;
+}
+.dropdown .dropbtn, .dropdown-i .dropbtn-i {
+    border: none;
+    outline: none;
+    padding: 0.875rem var(--space-4);
+    background-color: inherit;
+    margin: 0;
+}
+nav a:hover, .dropdown:hover .dropbtn, .dropdown-i:hover .dropbtn-i {
+    background-color: var(--trinity-color);
+}
+.dropdown-content, .dropdown-content-i {
+    display:none;
+    position: absolute;
+    background-color: var(--trinity-color);
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a, .dropdown-content-i a {
+    float: none;
+    padding: 0.875rem var(--space-4);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: var(--text-color);
+}
+.dropdown-content a:hover, .dropdown-content-i a:hover {
+    background-color: #D73502;
+}
+.dropdown:hover .dropdown-content, .dropdown-i:hover .dropdown-content-i {
+    display: block;
+}
+nav h1 {
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+   padding: 0.875rem var(--space-4);
+}
+.dropdown-i {
+    margin-left: auto;
+}
+
+footer {
+    position: relative;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+    padding: var(--space-2);
+    margin-top: 2rem;
+}
+

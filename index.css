@@ -1,0 +1,76 @@
+/*PAGE TITLES*/
+.page-header {
+    position: relative;
+    left: 25%;
+    margin: 10px auto;
+    width: 100%;
+}
+
+/*PAGE TITLE IMAGE*/
+.page-header img {
+    vertical-align: center;
+    width: 50%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+
+/*PAGE TITLE TEXT*/
+.page-header .header-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 0, 255, 0.5);
+    color: antiquewhite;
+    padding: 0 var(--space-6);
+    margin-bottom: var(--space-1);
+    border-radius: 0 0 0 1rem;
+    text-align: center;
+    font-size: x-large;
+}
+.about {
+    text-align: center;
+    width: 100%;
+}
+.about p {
+    margin: 0 auto;
+}
+
+/*REVIEWS AND EVENTS*/
+.rev-eve{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: var(--space-6);
+    margin: auto;
+}
+.reviews, .events {
+    border: 0.5rem solid var(--trinity-color);
+    text-align: center;
+    width: 100%;
+}
+.event-types {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+}
+.event-type {
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+}
+.event-type.Workshop { background: #4A90E2; }
+.event-type.Streetshow { background: #9B59B6; }
+.event-type.Fire { background: #E74C3C; }
+.event-type.LED {
+    background: linear-gradient(135deg, #d9d9d9, #f2f2f2, #bfbfbf);
+    color: black;
+}
+
+/* Bold date + time */
+.event-date strong {
+    font-weight: 700;
+}
+
+/* Location */
+.event-location { }
